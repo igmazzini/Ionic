@@ -1,0 +1,8 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "HolaMundo",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {}
+}

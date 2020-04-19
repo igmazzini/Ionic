@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+
+  <ion-buttons slot="start">
+    <ion-button (click)="goBack()" icon-only>
+      <ion-icon name="arrow-back-outline"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+    <ion-title>Tarea: {{tarea.name}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      
+      <ion-card-title>Descripcion</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      {{tarea.descripcion}}
+    </ion-card-content>
+  </ion-card>
+  
+</ion-content>
