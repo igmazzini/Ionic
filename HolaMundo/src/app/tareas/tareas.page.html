@@ -14,18 +14,19 @@
     </ion-card-header>
 
     <ion-card-content>
+      
       <ion-list>
         <ion-item button (click)="goToTarea(item)" *ngFor="let item of lista; let i=index">
           <ion-label>{{item.name}}</ion-label>
           <ion-icon color="success" *ngIf="did(i)" name="checkmark-circle-outline"></ion-icon>
-          <ion-icon *ngIf="!did(i)" color="danger" name="close-circle-outline"></ion-icon>                  
-          <ion-icon name="chevron-forward-outline"></ion-icon>        
-                
+          <ion-icon *ngIf="!did(i)" color="danger" name="close-circle-outline"></ion-icon>
+          <ion-icon name="chevron-forward-outline"></ion-icon>
+
         </ion-item>
       </ion-list>
     </ion-card-content>
   </ion-card>
 
-
+  
 
 </ion-content>

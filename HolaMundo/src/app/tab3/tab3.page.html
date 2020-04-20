@@ -1,31 +1,22 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+      Datos de usuarios - Servidor Externo
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-grid>
-    <ion-row>
-      <ion-col size='2' size-md="4">
-        <p>Columna 1</p>
-      </ion-col>
-      <ion-col size='2' size-md="4">
-        <p>Columna 2</p>
-      </ion-col>
-      <ion-col size='8' size-md="4">
-        <p>Columna 3</p>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col size='4' >
-        <p>Otra columna 1</p>
-      </ion-col>
-      <ion-col size='8'>
-        <p>Otra columna 2</p>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+
+  <ion-list>
+    <ion-item *ngFor="let item of users">
+      <ion-label>
+        <h1>Name: {{item.name}}</h1>
+        <h3>User: {{item.username}}</h3>
+        <h4>Email: {{item.email}}</h4>
+      </ion-label>     
+    </ion-item>   
+    
+  </ion-list>
+ 
 </ion-content>

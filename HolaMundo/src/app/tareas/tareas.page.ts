@@ -52,9 +52,12 @@ index   */
     };
 
     this._router.navigate(['tarea'], navigationExtras);
-    //this._nvControler.navigateForward(['tarea']);
-
+   
+    
 
   }
+
+
+  
 
 }
